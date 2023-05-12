@@ -9,7 +9,6 @@ import Footer from './components/Footer';
 import Layout from "./components/Layout";
 import Buy from './components/Buy';
 import Rent from './components/Rent';
-import Places from "./components/Places";
 
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
 				</Routes>
 				<Footer />
 			</BrowserRouter>
-			<Places/>
 		</>
 	);
 }
