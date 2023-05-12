@@ -1,0 +1,32 @@
+.properties-container {
+    padding-top: 50px;
+    @media screen and (max-width: 768px) {
+        padding-top: 80px;
+    }
+
+    .propert-heading {
+        font-size: 19px;
+        font-weight: $font700;
+        font-family: "Montserrat-Bold";
+        padding-bottom: 30px;
+        padding-top: 55px;
+
+        @media screen and (max-width: 768px) {
+            padding-bottom: 14px;
+            padding-top: 14px;
+        }
+    }
+
+    .property-list {
+        list-style-type: none;
+        padding: 0;
+
+        li>a {
+            text-decoration: none;
+            color: $black;
+            opacity: 0.8;
+            font-size: 13px;
+            font-family: "Montserrat-normal-Bold";
+        }
+    }
+}

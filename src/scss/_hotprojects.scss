@@ -1,0 +1,194 @@
+.hot-projects-container {
+    position: relative;
+    margin-top: 40px;
+    @media screen and (max-width: 768px) {
+        margin-top: 40px;
+    }
+    .hot-project-slide-bg {
+        position: absolute;
+        top: -40px;
+        right: 0;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .hot-projects-heading {
+        font-size: 35px;
+        font-family: "Anglecia-Pro-Display";
+        margin-bottom: 24px !important;
+
+        @media screen and (max-width: 768px) {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    .hot-projects-slider {
+        .slick-slider {
+            .slick-list {
+                margin: 0 -5px;
+
+                .slick-track {
+                    .slick-slide>div {
+                        margin: 0 5px;
+
+                        .card {
+                            border-radius: 24px;
+
+                            .slider-img {
+                                width: 100%;
+                                height: 200px;
+                            }
+
+                            .card-body {
+                                padding: 20px 23px 23px 23px;
+
+                                .card-body-left {
+
+                                    .card-title {
+                                        font-size: 22px;
+                                        color: $black;
+                                        margin-top: 10px;
+                                    }
+
+                                    .card-mask-content {
+                                        font-size: 20px;
+                                        color: $gulfblue;
+                                        gap: 6px;
+                                        margin-top: 3px;
+                                        line-height: 26px;
+                                    }
+
+                                    .apartment-btn {
+                                        background: linear-gradient(245.46deg, rgba(154, 154, 154, 0.8) -21.25%, rgba(252, 252, 252, 0.39597) 48.13%, rgba(184, 184, 184, 0.8) 116.12%);
+                                        border: 0.5px solid #000000;
+                                        font-size: 12px;
+                                        font-weight: $font700;
+                                        color: $black;
+                                        padding: 3px 22px;
+                                        margin-top: 7px;
+                                    }
+                                }
+
+                                .card-body-right {
+                                    width: 58px;
+                                    height: 58px;
+                                    background: linear-gradient(245.46deg, rgba(175, 175, 175, 0.8) -21.25%, rgba(255, 255, 255, 0.39597) 48.13%, rgba(205, 205, 205, 0.8) 116.12%);
+                                    border: 1px solid #000000;
+                                    border-radius: 50%;
+                                    display: grid;
+                                    place-items: center;
+                                }
+                            }
+
+                            .body-bottom {
+                                margin-top: 17px;
+
+                                .body-bottom-left {
+                                    gap: 10px;
+
+                                    p {
+                                        &:first-child {
+                                            font-size: 12px;
+                                            color: $black;
+                                        }
+
+                                        &:last-child {
+                                            font-size: 12px;
+                                            color: $gulfblue;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .slick-slider {
+                                .slick-dots {
+                                    bottom: 0;
+
+                                    li {
+                                        button {
+                                            &::before {
+                                                width: 20px;
+                                                height: 3px;
+                                                font-size: 0;
+                                                background: transparent;
+                                                border: 0.5px solid $white;
+                                                border-radius: 9px;
+                                            }
+                                        }
+                                    }
+
+                                    .slick-active {
+                                        button {
+                                            &::before {
+                                                opacity: 1;
+                                                background-color: $white;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .card-img-btns {
+                                position: absolute;
+                                top: 16px;
+                                left: 16px;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 4px;
+                                .btn {
+                                    background: linear-gradient(245.46deg, #FFFFFF -21.25%, rgba(255, 255, 255, 0.494963) 48.13%, #FFFFFF 116.12%);
+                                    border: 1px solid $white;
+                                    padding: 3px 12px;
+                                    font-size: 12px;
+                                    font-weight: $font500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .slick-dots {
+                bottom: -50px;
+
+                li {
+                    &:nth-child(5) {
+                        display: none;
+                    }
+                    &:nth-child(6) {
+                        display: none;
+                    }
+                    @media screen and (max-width: 768px) {
+                        margin: 0 13px;
+                    }
+                    button {
+                        &::before {
+                            width: 20px;
+                            height: 3px;
+                            font-size: 0;
+                            background: $white;
+                            border: 0.5px solid $black;
+                            opacity: 0.5;
+                            border-radius: 9px;
+                            @media screen and (max-width: 768px) {
+                                width: 36px;
+                            }
+                        }
+                    }
+                }
+
+                .slick-active {
+                    button {
+                        &::before {
+                            opacity: 1;
+                            background-color: $black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

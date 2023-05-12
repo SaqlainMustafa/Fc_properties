@@ -1,0 +1,110 @@
+.last-news-container {
+    margin-top: 100px;
+    .news-heading {
+        font-size: 35px;
+        font-weight: $font700;
+        line-height: 42px;
+        font-family: "Montserrat-Bold";
+        text-align: center;
+    }
+
+    .last-news-wrapper {
+        margin-top: 30px;
+        .last-news-slider {
+            .slick-slider {
+                .slick-dots {
+                    bottom: -50px;
+        
+                    li {
+                        @media screen and (max-width: 768px) {
+                            width: 36px;
+                        }
+                        &:nth-child(6) {
+                            display: none;
+                        }
+                        &:nth-child(5) {
+                            display: none;
+                        }
+                        button {
+                            &::before {
+                                width: 20px;
+                                height: 3px;
+                                font-size: 0;
+                                background: rgba(217, 217, 217, 0.5);
+                                // border: 0.5px solid $black;
+                                opacity: 0.5;
+                                border-radius: 9px;
+                                @media screen and (max-width: 768px) {
+                                    width: 36px;
+                                }
+                            }
+                        }
+                    }
+        
+                    .slick-active {
+                        button {
+                            &::before {
+                                opacity: 1;
+                                background-color: $black;
+                                border: 0;
+                            }
+                        }
+                    }
+                }
+                .slick-list {
+                    margin: 0 -4px;
+                    .slick-track {
+                        .slick-slide>div {
+                            margin: 0 4px;
+                        }
+                    }
+                }
+            }
+
+            .card {
+                border: 0;
+                background: $white;
+                box-shadow: 0px 8px 147px rgba(158, 158, 158, 0.2);
+                border-radius: 5px;
+                .slider-img {
+                    width: 100%;
+                }
+
+                .card-body {
+                    .card-title {
+                        font-size: 17px;
+                        font-weight: $font700;
+                        line-height: 20px;
+                        color: $black;
+                    }
+
+                    .card-text {
+                        font-size: 11px;
+                        font-weight: $font500;
+                        color: $black;
+                        opacity: 0.6;
+                        margin-top: 8px;
+                    }
+
+                    .border-shape {
+                        border: 1px dashed #CCCCCC;
+                        margin: 18px 0px 9px 0px;
+                    }
+
+                    .card-project-content {
+                        .new-project {
+                            color: $black;
+                            opacity: 0.6;
+                            font-weight: $font700;
+                        }
+
+                        span {
+                            font-size: 12px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

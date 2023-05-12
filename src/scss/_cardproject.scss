@@ -1,0 +1,105 @@
+.card-project-container {
+    background: rgb(16, 81, 101);
+    background: linear-gradient(180deg, rgba(16, 81, 101, 1) 0%, rgba(235, 246, 238, 1) 97%, rgba(239, 247, 240, 1) 100%);
+    padding: 100px 0;
+    box-shadow: 0px -3px 3px #105165;
+
+    @media screen and (max-width: 768px) {
+        background: none;
+    }
+
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            border-radius: 5px 5px 5px 84.5px;
+            padding: 12px;
+            height: 169px;
+            position: relative;
+            background: rgba(255, 255, 255, 0.1);
+            border: 0;
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                border-radius: 5px 5px 5px 84.5px;
+                padding: 2px;
+                -webkit-mask:
+                    linear-gradient(#fff 0 0) content-box,
+                    linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                background: linear-gradient(323.83deg, #000000 -8.53%, rgba(0, 0, 0, 0) 108.06%),
+                    linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+
+                @media screen and (max-width: 768px) {
+                    background: linear-gradient(323.83deg, #163F8E -8.53%, rgba(216, 229, 255, 0) 108.06%),
+                        linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+                }
+            }
+
+            .card-projct-heading {
+                font-size: 35px;
+                font-family: "Anglecia-Pro-Display";
+                line-height: 35px;
+                text-align: right;
+                color: $white;
+                position: relative;
+                z-index: 1;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 23px;
+                    color: $primary;
+                }
+            }
+
+            .card-nmb-btn {
+                background: linear-gradient(245.46deg, rgba(255, 255, 255, 0.8) -21.25%, rgba(255, 255, 255, 0.39597) 48.13%, rgba(255, 255, 255, 0.8) 116.12%);
+                border: 1px solid $white;
+                color: $black;
+                font-size: 25px;
+                font-family: "Anglecia-Pro-Display-Normal";
+                padding: 5px 13px;
+                position: absolute;
+                bottom: 6px;
+                right: 12px;
+                line-height: 25px;
+                border-radius: 88px;
+                padding: 3px 13px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 22px;
+                    border: 1px solid $primary;
+                }
+            }
+
+            .project-card-icons {
+                position: absolute;
+                top: -46px;
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+
+            .project-card-mbl-icons {
+                display: none;
+
+                @media screen and (max-width: 768px) {
+                    display: block;
+                    position: absolute;
+                    top: -36px;
+                }
+            }
+        }
+    }
+
+}

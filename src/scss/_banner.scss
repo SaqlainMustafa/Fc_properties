@@ -1,0 +1,82 @@
+.home-banner {
+    background-image: url('../../src/assets/images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 72px;
+    .banner-heading {
+        font-size: 44px;
+        font-family: "Anglecia-Pro-Display";
+        color: $black;
+        @media screen and (max-width: 768px) {
+           font-size: 35px;
+        }
+    }
+    .banner-content {
+        max-width: 440px;
+        width: 100%;
+        margin-top: 15px;
+        @media screen and (max-width: 576px) {
+            padding: 0 20px;
+        }
+        
+        .banner-btn-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+            @media screen and (max-width: 576px) {
+                justify-content: center;
+            }
+            .banner-btn {
+                border: 1px solid $black;
+                border-radius: 40px;
+                font-size: 14px;
+                padding: 8px 27px 9px 26px;
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+                }
+            }
+            .active {
+                background-color: $black;
+                color: $white;
+            }
+        }
+        .banner-form-key-content {
+            position: relative;
+            margin-top: 15px;
+            .banner-key-input {
+                width: 100%;
+                height: 44px;
+                border: 1px solid $black;
+                border-radius: 40px;
+                padding: 0px 50px 0px 23px;
+                background-color: transparent;
+                font-size: 14px;
+                outline: none;
+                &::placeholder {
+                    color: $black;
+                    // border-bottom: 1px solid;
+                }
+            }
+            .banner-search {
+                width: 38px;
+                height: 38px;
+                background-color: $black;
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                position: absolute;
+                right: 3px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

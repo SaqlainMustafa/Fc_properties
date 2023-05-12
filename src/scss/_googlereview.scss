@@ -1,0 +1,182 @@
+.google-review-container {
+    margin-top: 100px;
+
+    .google-review-heading {
+        font-size: 40px;
+        line-height: 48px;
+        font-family: "Anglecia-Pro-Display";
+        text-align: center;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            background: linear-gradient(90deg, #242F49 0%, rgba(36, 47, 73, 0) 92.42%);
+            width: 34%;
+            right: 0;
+            height: 1px;
+            top: 50%;
+
+            @media screen and (max-width: 1200px) and (min-width: 992px) {
+                width: 28%;
+            }
+
+            @media screen and (max-width: 992px) and (min-width: 768px) {
+                width: 25%;
+            }
+
+            @media screen and (max-width: 768px) and (min-width: 576px) {
+                width: 20%;
+            }
+
+            @media screen and (max-width: 576px) {
+                width: 14%;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            background: linear-gradient(194deg, #242F49 0%, rgba(36, 47, 73, 0) 92.42%);
+            width: 34%;
+            left: 0;
+            height: 1px;
+            top: 50%;
+
+            @media screen and (max-width: 1200px) and (min-width: 992px) {
+                width: 28%;
+            }
+
+            @media screen and (max-width: 992px) and (min-width: 768px) {
+                width: 25%;
+            }
+
+            @media screen and (max-width: 768px) and (min-width: 576px) {
+                width: 20%;
+            }
+
+            @media screen and (max-width: 576px) {
+                width: 14%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 30px;
+            line-height: 42px;
+        }
+    }
+
+    .google-review-wrapper {
+        margin-top: 65px;
+
+        .slick-slider {
+            .slick-list {
+                // overflow: unset;
+                padding-top: 40px;
+                margin: 0 -5px;
+
+                .slick-track {
+                    .slick-slide>div {
+                        margin: 0 5px;
+                    }
+                }
+            }
+        }
+
+        .google-review-card {
+            .card-body-top {
+                background: linear-gradient(135deg, #E8E8E8 0%, #FFFFFF 100%);
+                box-shadow: -33px 33px 66px rgba(220, 220, 220, 0.2), 33px -33px 66px rgba(220, 220, 220, 0.2), -33px -33px 66px rgba(255, 255, 255, 0.9), 33px 33px 83px rgba(220, 220, 220, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(220, 220, 220, 0.5);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                height: 215px;
+                padding: 0 24px 24px 24px;
+                border-radius: 10px 10px 0px 0px;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 25px;
+                    height: 25px;
+                    background: $white;
+                    bottom: -18px;
+                    // transform: rotate(45deg);
+                    // border-left: 1px solid;
+                    clip-path: polygon(50% 100%, 0 21%, 100% 20%);
+                }
+
+                .img-box {
+                    position: absolute;
+                    width: 63px;
+                    height: 63px;
+                    top: -35px;
+                }
+
+                .card-title {
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: $black;
+                    font-family: "Anglecia-Pro-Display";
+                    margin-top: 30px;
+                }
+
+                .card-text {
+                    font-size: 12px;
+                    font-weight: $font400;
+                    line-height: 16px;
+                    margin-top: 10px;
+                    text-align: center;
+                }
+
+                .card-read-more {
+                    font-size: 12px;
+                    font-weight: $font700;
+                    line-height: 16px;
+                    color: $black;
+                    text-decoration: none;
+                }
+
+                .google-review-start-content {
+                    display: flex;
+                    position: absolute;
+                    top: 14px;
+                    left: 24px;
+                    gap: 2px;
+                }
+            }
+
+            .card-bottom {
+                gap: 13px;
+                padding: 21px 0;
+                background: #FFFFFF;
+                border: 1px solid #D1D1D1;
+                border-radius: 0px 0px 19px 19px;
+                border-top: 0;
+
+                .img-box {
+                    width: 63px;
+                    height: 63px;
+                    position: relative;
+                }
+
+                .card-bottom-text {
+                    .card-title {
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: $black;
+                        font-family: "Anglecia-Pro-Display";
+                    }
+
+                    .card-text {
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+}

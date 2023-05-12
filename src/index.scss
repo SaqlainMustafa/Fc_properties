@@ -1,0 +1,111 @@
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+@import '/src/scss/varibales';
+@import '/src/scss/navbar';
+@import '/src/scss/banner';
+@import '/src/scss/cardproject';
+@import '/src/scss/hotprojects';
+@import '/src/scss/why';
+@import '/src/scss/download.scss';
+@import '/src/scss/googlereview';
+@import '/src/scss/partners';
+@import '/src/scss/lastnews.scss';
+@import '/src/scss/properties';
+@import '/src/scss/consultation';
+@import '/src/scss/footer';
+@import '/src/scss/propertyform';
+@import '/src/scss/locatemapbanner';
+@import '/src/scss/bannerarea';
+@import '/src/scss/quiz';
+@import '/src/scss/places';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat";
+
+	&::after {
+		box-sizing: border-box;
+	}
+
+	&::before {
+		box-sizing: border-box;
+	}
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url(../src/assets/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Montserrat-Bold";
+	src: url(../src/assets/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Montserrat-normal-Bold";
+	src: url(../src/assets/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+	font-family: "Anglecia-Pro-Display";
+	src: url(../src/assets/fonts/anglecia-pro-display/AngleciaProDisplay-Italic.otf);
+}
+@font-face {
+	font-family: "Anglecia-Pro-Display-Normal";
+	src: url(../src/assets/fonts/anglecia-pro-display/AngleciaProDisplay-Regular.otf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-bottom: 0 !important;
+}
+
+
+
+body {
+	overflow-x: hidden;
+}
+
+.nav-whatsapp {
+	width: 42px;
+	height: 42px;
+	display: grid;
+	background: $green;
+	border-radius: 50%;
+	place-items: center;
+
+	.nav-whatsapp-logo {
+		font-size: 30px;
+		color: $white;
+	}
+}
+.map {
+	display: flex;
+}
+
+// .images {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	align-items: center;
+// 	gap: 20px;
+// 	width: 60%;
+// }
+
+// .image {
+// 	width: 30%;
+// 	height: 30%;
+// 	color: $white;
+// 	overflow: hidden;
+// }
+
+// .image img {
+// 	display: block;
+// 	width: 100%;
+// }
