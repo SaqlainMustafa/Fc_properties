@@ -9,6 +9,7 @@ import Partners from './Partners'
 import LastNews from './LastNews'
 import Properties from './Properties'
 import Consultation from './Consultation'
+import HomeFooter from './HomeFooter'
 
 function Layout() {
     return (
@@ -23,6 +24,7 @@ function Layout() {
             <LastNews />
             <Properties />
             <Consultation />
+            <HomeFooter />
         </>
     )
 }

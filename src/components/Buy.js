@@ -4,17 +4,35 @@ import BannerArea from './BannerArea'
 import Quiz from './Quiz'
 import Places from './Places'
 import FiveJbr from './FiveJbr'
-import Footer from './Footer'
+
+const mapStyle = {
+	fontSize: '15px',
+	backgroundColor: '#163F8E',
+	padding: '10px 47px',
+	borderRadius: '11px',
+	position: 'absolute',
+	color: 'white',
+	fontWeight: '700',
+	textTransform: 'uppercase',
+	top: '-21px',
+    left: '50%',
+    transform: 'translate(-50%)'
+}
+const wrapStyle = {
+	position: 'relative'
+}
 
 function Buy() {
 	return (
 		<>
 			<BannerArea />
 			<Places />
-			<LocateMapForm />
+			<div className="map-wrapper-control" style={wrapStyle}>
+				<LocateMapForm />
+				<button className='btn' style={mapStyle}>Dubai Map</button>
+			</div>
 			<FiveJbr />
 			<Quiz />
-			<Footer />
 		</>
 	)
 }

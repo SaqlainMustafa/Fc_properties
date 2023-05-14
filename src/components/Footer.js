@@ -8,7 +8,7 @@ import { FaLinkedinIn } from 'react-icons/fa';
 function Footer() {
     return (
         <>
-            <div className="footer-area">
+            <footer className="footer-area">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4">
@@ -99,7 +99,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </footer>
         </>
     )
 }
