@@ -1,0 +1,399 @@
+// area-banner-style
+
+.banner-area-wrapper {
+    background-image: url('../assets/images/banner-area.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 223px;
+}
+
+// places style
+
+.space-section {
+    gap: 25px;
+    padding-top: 48px;
+    padding-bottom: 78px;
+
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+    }
+
+    .card-col {
+        width: calc(50% - 25px);
+        position: relative;
+
+        @media screen and (max-width: 576px) {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            position: absolute;
+            background: rgba(1, 57, 139, 0.9);
+            padding: 10px 0 10px 18px;
+            width: 100%;
+            bottom: 0;
+
+            .title {
+                color: $white;
+                font-family: "Montserrat-normal-Bold";
+                font-size: 19px;
+                font-weight: $font700;
+                line-height: 28px;
+            }
+        }
+    }
+
+    .pagination {
+        margin-bottom: 0;
+        gap: 22px;
+
+        @media screen and (max-width: 576px) {
+            gap: 5px;
+        }
+
+        .active>.page-link {
+            background-color: transparent !important;
+            color: $purple;
+            border: 1px solid $primary !important;
+            font-size: 20px;
+            font-weight: $font700;
+            line-height: 30.2px;
+            border-radius: 50%;
+            box-shadow: unset;
+        }
+
+        .page-item {
+
+            &:first-child {
+                display: none;
+            }
+
+            &:last-child {
+                display: none;
+            }
+
+            .page-link {
+                color: $black;
+                font-size: 20px;
+                font-weight: $font700;
+                line-height: 30.2px;
+                border: 0;
+                padding: 0;
+                width: 39px;
+                height: 39px;
+                display: grid;
+                place-items: center;
+
+                @media screen and (max-width: 576px) {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 18px;
+                }
+
+                &:hover {
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
+
+// five-jbr-style
+
+.jbr-section {
+    gap: 25px;
+    padding-top: 148px;
+
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+    }
+
+    .jbr-col {
+        width: calc(50% - 25px);
+        position: relative;
+        background: $white;
+        box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        .jbr-img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            border-radius: 8px 0 0 8px;
+
+            @media screen and (max-width: 992px) and (min-width: 768px) {
+                height: 100%;
+            }
+
+            @media screen and (max-width: 576px) {
+                height: 100%;
+            }
+        }
+
+        .jbr-content {
+            padding: 8px 0px 0px 8px;
+            font-family: "Montserrat";
+
+            .jbr-price {
+                font-size: 16px;
+                line-height: 24.16px;
+                font-weight: $font500;
+                color: $blue;
+            }
+
+            .jbr-title {
+                font-size: 14px;
+                font-weight: $font700;
+                line-height: 21.14px;
+                text-transform: uppercase;
+                color: $black;
+                font-family: "Montserrat-Bold";
+            }
+
+            .five-holding-content {
+                padding: 27px 0 20px 0;
+
+                .jbr-category {
+                    font-size: 13px;
+                    font-weight: $font500;
+                    line-height: 19.63px;
+                }
+            }
+
+            .district-content {
+                .district-text {
+                    font-size: 10px;
+                    font-weight: $font700;
+                    line-height: 15px;
+                    color: $Gray60;
+
+                    span {
+                        color: $black;
+                        font-weight: $font600;
+                        line-height: 15.1px;
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .review-content {
+                .review-text {
+                    font-size: 12px;
+                    font-weight: $font400;
+                    line-height: 18.12px;
+                    color: $Gray60;
+                }
+            }
+
+            .five-holding-content {
+                gap: 5px;
+            }
+        }
+
+        .jbr-social-content {
+            background-color: $gray;
+            margin-top: 7px;
+            padding: 9px 15px 9px 12px;
+            border-radius: 0 0 8px 0;
+
+            @media screen and (max-width: 992px) and (min-width: 768px) {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+
+            @media screen and (max-width: 576px) {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+
+            .jbr-social-list {
+                list-style-type: none;
+                gap: 9px;
+
+                .jbr-item {
+                    .jbr-link {
+                        width: 22px;
+                        height: 22px;
+                        display: grid;
+                        place-items: center;
+                        text-decoration: none;
+                        background: $white;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            .learn-more-btn {
+                padding: 3px 15px;
+                background: $white;
+                color: $black;
+                font-size: 10px;
+                font-weight: $font700;
+                text-decoration: none;
+                border-radius: 31px;
+                font-family: "Montserrat-normal-Bold";
+                line-height: 15.1px;
+            }
+        }
+    }
+
+    .pagination {
+        margin-bottom: 0;
+        gap: 22px;
+
+        @media screen and (max-width: 576px) {
+            gap: 5px;
+        }
+
+
+        .active>.page-link {
+            background-color: transparent !important;
+            color: $purple;
+            border: 1px solid $primary !important;
+            font-size: 20px;
+            font-weight: $font700;
+            line-height: 30.2px;
+            border-radius: 50%;
+            box-shadow: unset;
+        }
+
+        .page-item {
+
+            &:first-child {
+                display: none;
+            }
+
+            &:last-child {
+                display: none;
+            }
+
+            .page-link {
+                color: $black;
+                font-size: 20px;
+                font-weight: $font700;
+                line-height: 30.2px;
+                border: 0;
+                padding: 0;
+                width: 39px;
+                height: 39px;
+                display: grid;
+                place-items: center;
+
+                @media screen and (max-width: 576px) {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 18px;
+                }
+
+                &:hover {
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
+
+// quiz-section-style
+
+.quiz-section {
+    margin-top: 97px;
+
+    @media screen and (max-width: 576px) {
+        margin-top: 150px;
+    }
+
+    .quiz-wrapper {
+        background-color: $silver;
+        border-radius: 30px;
+        position: relative;
+
+        .quiz-right {
+            .quiz-heading {
+                font-size: 22px;
+                font-weight: $font700;
+                font-family: "Montserrat-Bold";
+                color: $black;
+                max-width: 386px;
+            }
+
+            .quiz-text {
+                display: flex;
+                flex-direction: column;
+                gap: 22px;
+                margin-top: 14px;
+
+                >p {
+                    font-size: 15px;
+                    font-weight: $font400;
+                    color: $black;
+                }
+            }
+
+            .quiz-content {
+                margin-top: 27px;
+                gap: 25px;
+
+                @media screen and (max-width: 576px) {
+                    flex-direction: column;
+                }
+
+                .take-quiz-btn {
+                    padding: 13px 45px;
+                    background: $blue;
+                    color: $white;
+                    font-size: 18px;
+                    font-weight: $font600;
+                    line-height: 21.94px;
+                    text-decoration: none;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 16px;
+                        padding: 13px 31px;
+                    }
+
+                    @media screen and (max-width: 576px) {
+                        padding: 13px 35px;
+                    }
+                }
+
+                .quiz-time {
+                    font-size: 15px;
+                    font-weight: $font400;
+                    line-height: 17px;
+                }
+            }
+
+        }
+    }
+
+    .tick-box {
+        display: grid;
+        place-items: center;
+        border: 6px solid $blue;
+        outline: $white solid 6px;
+        border-radius: 50%;
+        box-shadow: 0px 21px 44px rgba(0, 0, 0, 0.15);
+        width: 73px;
+        height: 73px;
+        position: absolute;
+        top: -13px;
+        right: -23px;
+        background: $white;
+
+        @media screen and (max-width: 576px) {
+            right: 0;
+        }
+    }
+}

@@ -30,7 +30,7 @@ function App() {
 
     return (
         <>
-            <div className="container space-section d-flex justify-content-center flex-wrap">
+            <div className="container space-section d-flex justify-content-center flex-wrap ms-auto me-auto">
                 {displayUsers}
                 <ReactPaginate
                     containerClassName="pagination d-flex justify-content-center"

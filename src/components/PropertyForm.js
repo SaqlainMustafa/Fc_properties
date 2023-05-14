@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import searcIcon from '../assets/images/search-icon.png';
+
 
 function PropertyForm() {
 	const [myProperty, setMyProperty] = useState("Where To?");
@@ -15,26 +17,17 @@ function PropertyForm() {
 		setMyDeveloper(event.target.value)
 	}
 	const propertyAreas = (event) => {
-	    setMyArea(event.target.value)
+		setMyArea(event.target.value)
 	}
 	const propertyLifestyle = (event) => {
-	    setMyLife(event.target.value)
+		setMyLife(event.target.value)
 	}
 	const propertyMinPrice = (event) => {
-	    setMyMinPrice(event.target.value)
+		setMyMinPrice(event.target.value)
 	}
 	const propertyMaxPrice = (event) => {
-	    setMyMaxPrice(event.target.value)
+		setMyMaxPrice(event.target.value)
 	}
-	// const searchStyle = {
-	// 	width: '100%',
-	// 	height: '43px',
-	// 	fontSize: '12px',
-	// 	color: 'black',
-	// 	border: '1.5px solid rgba(0, 0, 0, 0.2)',
-	// 	borderRadius: '5px 0 0 5px',
-	// 	outline: 'none'
-	// };
 	return (
 		<>
 			<div className="property-form-container">
@@ -55,6 +48,7 @@ function PropertyForm() {
 								<input type="search" className='search-project-input' placeholder='Search Project Name' />
 							</div>
 							<div className="property-form property-find">
+								<img className='slide-partner-img' src={searcIcon} alt='' />
 								<button type='submit' className='btn find-btn'>Find</button>
 							</div>
 						</div>

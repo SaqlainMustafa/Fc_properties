@@ -1,134 +1,79 @@
-.footer {
-    background-color: $toryblue;
-    padding: 50px 0 77px 0;
+.footer-area {
+    background-color: $blue;
+    padding-top: 29px;
+    padding-bottom: 25px;
 
-    .footer-wrapper {
-        @media screen and (max-width: 768px) {
-            flex-direction: column;
-        }
+    .footer-heading {
+        font-size: 25px;
+        font-weight: $font700;
+        line-height: 30.48px;
+        color: $white;
+        font-family: "Montserrat-Bold";
+        margin-bottom: 18px !important;
+    }
 
-        .footer-content {
-            &:first-child {
-                max-width: 309px;
-            }
+    .footer-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
 
-            .footer-heading {
-                font-size: 15px;
+        .footer-item {
+            .footer-link {
+                font-size: 12px;
                 font-weight: $font400;
-                line-height: 15px;
+                line-height: 21.48px;
                 color: $white;
-                font-family: "Anglecia-Pro-Display-Normal";
-            }
-
-            >p {
-                color: $white;
-                font-size: 15px;
-                margin-top: 10px;
-            }
-
-            .footer-social-content {
-                display: flex;
-                gap: 17px;
-                margin-top: 18px;
-
-                .footer-social {
-                    width: 32px;
-                    height: 32px;
-                    border-radius: 50%;
-                    background-color: $white;
-                    display: grid;
-                    place-items: center;
-                    color: $toryblue;
-
-                    .social-icon {
-                        font-size: 20px;
-                    }
-                }
+                text-decoration: none;
             }
         }
     }
 
-    .footer-menu-wrapper {
+    .footer-social-content {
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-top: 55px;
         position: relative;
-
-        &::after {
-            position: absolute;
-            content: '';
-            width: 100%;
-            height: 0.5px;
-            background-color: white;
-            bottom: -31px;
-        }
-
         &::before {
             position: absolute;
             content: '';
             width: 100%;
-            height: 0.5px;
-            background-color: white;
-            top: -31px;
+            background: $white;
+            height: 1px;
+            left: -30px;
+            top: -18px;
+            @media screen and (max-width: 768px) {
+                left: 0;
+            }
         }
-
-        .footer-menu-content {
-            margin-top: 45px;
-
-            .footer-list {
-                list-style-type: none;
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                position: relative;
-
-                @media screen and (max-width: 768px) {
-                    gap: 25px;
-                    justify-content: space-evenly;
-                    text-align: center;
-                }
-
-                li {
-                    position: relative;
-                    padding: 5px 0;
-
-                    @media screen and (max-width: 768px) {
-                        padding: 5px 10px;
-                    }
-
-                    &::after {
-                        position: absolute;
-                        content: '';
-                        width: 1px;
-                        height: 100%;
-                        background-color: $white;
-                        top: 0;
-                        right: -43px;
-                        opacity: 0.2;
-
-                        @media screen and (max-width: 992px) {
-                            right: -25px;
-                        }
-
-                        @media screen and (max-width: 768px) {
-                            left: 0;
-                            display: none;
-                        }
-                    }
-
-                    &:last-child {
-                        &::after {
-                            display: none;
-                        }
-                    }
-
-                    >a {
-                        text-decoration: none;
-                        color: $white;
-                        font-size: 15px;
-                        line-height: 18px;
+        .footer-member-text {
+            font-size: 18px;
+            font-family: "Montserrat-Bold";
+            line-height: 32.22px;
+            color: $white;
+            @media screen and (max-width: 576px) {
+                line-height: 26px;
+            }
+        }
+        .footer-social-list {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+            margin-bottom: 0;
+            padding-left: 0;
+            .footer-social-item {
+                .footer-link {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    display: grid;
+                    place-items: center;
+                    background: $white;
+                    text-decoration: none;
+                    .social-icon {
+                        color: $blue;
                     }
                 }
-
             }
         }
     }
-
 }
