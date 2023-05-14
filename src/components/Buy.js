@@ -25,6 +25,7 @@ const wrapStyle = {
 function Buy() {
 	return (
 		<>
+		{/* Off Plan List Page */}
 			<BannerArea />
 			<Places />
 			<div className="map-wrapper-control" style={wrapStyle}>

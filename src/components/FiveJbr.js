@@ -12,7 +12,7 @@ function FiveJbr() {
     const [users, setUsers] = useState(JsonData.slice(0, 100));
     const [pageNumber, setPageNumber] = useState(0);
 
-    const usersPerPage = 10;
+    const usersPerPage = 8;
     const pagesVisited = pageNumber * usersPerPage;
 
     const displayUsers = users

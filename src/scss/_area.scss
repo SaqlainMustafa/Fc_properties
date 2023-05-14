@@ -252,6 +252,7 @@
     .pagination {
         margin-bottom: 0;
         gap: 22px;
+        margin-top: 14px;
 
         @media screen and (max-width: 576px) {
             gap: 5px;
