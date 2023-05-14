@@ -1,4 +1,5 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import logo from '../assets/images/logo.png';
@@ -9,9 +10,13 @@ import { Link } from 'react-router-dom'
 
 
 function Navbar() {
+    const location = useLocation();
+    const isHomePage = location.pathname === '/';
+    const isRent = location.pathname === '/rent';
+
     return (
         <>
-            <nav className="navbar navbar-expand-lg">
+            <nav className={`navbar navbar-expand-lg ${isHomePage ? 'home-page' : ''} ${isRent ? 'home-page' : ''}`}>
                 <div className="container">
                     <Link to='/' className="navbar-brand">
                         <img className='logo' src={logo} alt='' />

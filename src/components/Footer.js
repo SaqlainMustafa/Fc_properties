@@ -4,8 +4,13 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import { AiFillYoutube } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
+import { useLocation } from "react-router-dom";
+
 
 function Footer() {
+    const { pathname } = useLocation();
+    if (pathname === "/") return null;
+
     return (
         <>
             <footer className="footer-area">

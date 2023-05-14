@@ -64,11 +64,12 @@ function FiveJbr() {
             );
         });
 
-    const pageCount = Math.ceil(users.length / usersPerPage);
+        const pageCount = Math.ceil(users.length / usersPerPage);
 
-    const handlePageClick = ({ selected }) => {
-        setPageNumber(selected);
-    };
+        const handlePageClick = ({ selected }) => {
+            setPageNumber(selected);
+                window.scrollTo({top: 250, left: 0, behavior: 'smooth'});
+        };
     return (
         <>
             <div className="container jbr-section d-flex justify-content-center flex-wrap">

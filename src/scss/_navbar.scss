@@ -1,6 +1,15 @@
-.navbar {
+.navbar.navbar-expand-lg {
+    padding: 16px 0 ;
+    position: absolute;
     background: linear-gradient(90deg, #00398A 16.56%, rgba(0, 57, 138, 0) 116.05%);
-    padding: 16px 0 !important;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    z-index:  99999999;
+
+    &.home-page {
+        position: static;
+        backdrop-filter: unset;
+    }
 
     .navbar-nav {
         gap: 20px;
