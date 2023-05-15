@@ -6,7 +6,7 @@ function BannerArea() {
     return (
         <>
             <div className="banner-area-wrapper">
-                {/* <img className='card-img-top' src={bannerArea} alt='' /> */}
+                
             </div>
         </>
     )

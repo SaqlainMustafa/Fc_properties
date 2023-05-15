@@ -3,7 +3,7 @@
     position: absolute;
     background: linear-gradient(90deg, #00398A 16.56%, rgba(0, 57, 138, 0) 116.05%);
     width: 100%;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(0px);
     z-index:  99999999;
 
     &.home-page {

@@ -13,10 +13,11 @@ function Navbar() {
     const location = useLocation();
     const isHomePage = location.pathname === '/';
     const isRent = location.pathname === '/rent';
+    const isSecondaryMarket = location.pathname === '/secondarymarket';
 
     return (
         <>
-            <nav className={`navbar navbar-expand-lg ${isHomePage ? 'home-page' : ''} ${isRent ? 'home-page' : ''}`}>
+            <nav className={`navbar navbar-expand-lg ${isHomePage ? 'home-page' : ''} ${isSecondaryMarket ? 'home-page' : ''} ${isRent ? 'home-page' : ''}`}>
                 <div className="container">
                     <Link to='/' className="navbar-brand">
                         <img className='logo' src={logo} alt='' />
@@ -47,7 +48,7 @@ function Navbar() {
                                     Area
                                 </Link>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><Link to='/' className="dropdown-item">Action</Link></li>
+                                    <li><Link to='/secondarymarket' className="dropdown-item">Secondary Market</Link></li>
                                     <li><Link to='/' className="dropdown-item">Another action</Link></li>
                                     <li><Link to='/' className="dropdown-item">Something else here</Link></li>
                                 </ul>
@@ -77,8 +78,8 @@ function Navbar() {
                                     About
                                 </Link>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><Link to='/'className="dropdown-item">Action</Link></li>
-                                    <li><Link to='/' className="dropdown-item">Another action</Link></li>
+                                    <li><Link to='/about'className="dropdown-item">About & FAQ</Link></li>
+                                    <li><Link to='/contact' className="dropdown-item">Contact Us</Link></li>
                                     <li><Link to='/' className="dropdown-item">Something else here</Link></li>
                                 </ul>
                             </li>

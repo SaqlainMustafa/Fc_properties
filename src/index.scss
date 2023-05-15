@@ -5,10 +5,10 @@
 @import '/src/scss/cardproject';
 @import '/src/scss/hotprojects';
 @import '/src/scss/why';
-@import '/src/scss/download.scss';
+@import '/src/scss/download';
 @import '/src/scss/googlereview';
 @import '/src/scss/partners';
-@import '/src/scss/lastnews.scss';
+@import '/src/scss/lastnews';
 @import '/src/scss/properties';
 @import '/src/scss/consultation';
 @import '/src/scss/homefooter';
@@ -16,6 +16,7 @@
 @import '/src/scss/locatemapbanner';
 @import '/src/scss/area';
 @import '/src/scss/footer';
+@import '/src/scss/about';
 
 * {
 	box-sizing: border-box;
@@ -89,22 +90,30 @@ body {
 	display: flex;
 }
 
-// .images {
-// 	display: flex;
-// 	flex-wrap: wrap;
-// 	align-items: center;
-// 	gap: 20px;
-// 	width: 60%;
-// }
+.about-headings {
+	font-size: 37px;
+	font-weight: 700;
+	line-height: 55.87px;
+	color: $blue;
+	font-family: "Montserrat-normal-Bold";
+	@media screen and (max-width: 768px) {
+		font-size: 26px !important;
+	}
+}
+.about-text {
+	font-size: 18px;
+	font-weight: $font500;
+	line-height: 34.74px;
+	color: $black;
+	@media screen and (max-width: 768px) {
+		font-size: 16px !important;
+		line-height: 27.74px !important;
+	}
+	@media screen and (max-width: 576px) {
+		font-size: 14px !important;
+	}
+}
 
-// .image {
-// 	width: 30%;
-// 	height: 30%;
-// 	color: $white;
-// 	overflow: hidden;
-// }
-
-// .image img {
-// 	display: block;
-// 	width: 100%;
-// }
+.map-wrapper-control {
+	position: relative;
+}
